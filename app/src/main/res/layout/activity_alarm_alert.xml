@@ -6,99 +6,112 @@
     android:layout_height="match_parent"
     tools:context=".AlarmAlertActivity">
 
-    <LinearLayout
-        android:layout_width="378dp"
-        android:layout_height="466dp"
-        android:layout_marginBottom="8dp"
+    <TextView
+        android:id="@+id/noticeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/checkButton"
+        android:text="Wake Up Now!"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/noticeTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Wake Up Now!"
-            android:textAlignment="center"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+    <TextView
+        android:id="@+id/alarmDescriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:hint="No alarm description."
+        android:lines="2"
+        android:text="No Alarm Description"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noticeTextView" />
 
-        <TextView
-            android:id="@+id/alarmDescriptionTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:lines="2"
-            android:text="Alarm Description"
-            android:textAlignment="center"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+    <TextView
+        android:id="@+id/problemTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Problem"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alarmDescriptionTextView" />
 
-        <TextView
-            android:id="@+id/problemTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Problem"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+    <TextView
+        android:id="@+id/problem1Text"
+        android:layout_width="225dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="4"
+        android:gravity="center_vertical"
+        android:text="Problem 1"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/problemTextView" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="5">
+    <EditText
+        android:id="@+id/problem1Answer"
+        android:layout_width="136dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Answer Here"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/problem1Text"
+        app:layout_constraintTop_toBottomOf="@+id/problemTextView" />
 
-            <TextView
-                android:id="@+id/problem1Text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="4"
-                android:text="Problem 1"
-                android:textSize="18sp" />
+    <TextView
+        android:id="@+id/problem2Text"
+        android:layout_width="225dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="4"
+        android:gravity="center_vertical"
+        android:text="Problem 2"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/problem1Text" />
 
-            <EditText
-                android:id="@+id/problem1Answer"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:hint="Answer Here"
-                android:inputType="textPersonName"
-                android:textAlignment="center" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="5">
-
-            <TextView
-                android:id="@+id/problem2Text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="4"
-                android:text="Problem 2"
-                android:textSize="18sp" />
-
-            <EditText
-                android:id="@+id/problem2Answer"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:hint="Answer Here"
-                android:inputType="textPersonName"
-                android:textAlignment="center" />
-
-        </LinearLayout>
-
-    </LinearLayout>
+    <EditText
+        android:id="@+id/problem2Answer"
+        android:layout_width="136dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Answer Here"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/problem2Text"
+        app:layout_constraintTop_toBottomOf="@+id/problem1Answer" />
 
     <Button
         android:id="@+id/checkButton"
@@ -107,6 +120,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_weight="4"
+        android:onClick="onCheckButtonClick"
         android:text="Check ansewer and close alarm"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

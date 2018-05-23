@@ -9,7 +9,7 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="480dp"
+        android:layout_height="496dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:orientation="vertical"
@@ -21,7 +21,7 @@
         <TimePicker
             android:id="@+id/timePicker"
             android:layout_width="match_parent"
-            android:layout_height="352dp"
+            android:layout_height="357dp"
             android:layout_marginEnd="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
@@ -46,7 +46,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Active (Active but didn't set day will alarm only once) " />
+            android:text="Active Alarm ?"
+            android:textSize="12sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -59,7 +60,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="OFF" />
+                android:text="OFF"
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/mondayInfo"
@@ -67,7 +69,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="OFF" />
+                android:text="OFF"
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/tuesdayInfo"
@@ -75,7 +78,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="OFF" />
+                android:text="OFF"
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/wednesdayInfo"
@@ -83,7 +87,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="OFF" />
+                android:text="OFF"
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/thursdayInfo"
@@ -91,7 +96,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="OFF" />
+                android:text="OFF"
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/fridayInfo"
@@ -99,7 +105,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="OFF" />
+                android:text="OFF"
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/saturdayInfo"
@@ -107,7 +114,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="OFF" />
+                android:text="OFF"
+                android:textSize="12sp" />
 
         </LinearLayout>
 

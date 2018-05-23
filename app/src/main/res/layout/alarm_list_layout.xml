@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="98"
-            android:textSize="30sp"
+            android:textSize="28sp"
             android:textStyle="bold" />
 
         <TextView
@@ -25,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=":"
-            android:textSize="30sp"
+            android:textSize="28sp"
             android:textStyle="bold" />
 
         <TextView
@@ -33,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="76"
-            android:textSize="30sp"
+            android:textSize="28sp"
             android:textStyle="bold"/>
     </LinearLayout>
 
@@ -45,14 +45,14 @@
         android:fontFamily="monospace"
         android:gravity="center"
         android:text="S M T W T F S"
-        android:textSize="24sp" />
+        android:textSize="22sp" />
 
     <TextView
         android:id="@+id/active"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="4"
-        android:gravity="center"
         android:text="OFF"
-        android:textSize="24sp" />
+        android:textAlignment="textStart"
+        android:textSize="22sp" />
 </LinearLayout>

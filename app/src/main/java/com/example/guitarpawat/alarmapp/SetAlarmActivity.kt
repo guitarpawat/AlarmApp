@@ -34,6 +34,7 @@ class SetAlarmActivity : AppCompatActivity(){
         description.setText(alarm.description)
         activeSwitch.isChecked = alarm.active
         updateDays()
+
     }
 
     fun onSetButtonClicked(view: View) {

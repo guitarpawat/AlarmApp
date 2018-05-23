@@ -1,6 +1,7 @@
 package com.example.guitarpawat.alarmapp
 
 class AlarmPresenter(val view: AlarmView, val repository: AlarmRepository) {
+
     fun start() {
         repository.loadAlarms()
         updateAlarm()

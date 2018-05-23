@@ -32,4 +32,6 @@ abstract class AlarmRepository {
     open fun removeAlarm(pos: Int) {
         alarmList.removeAt(pos)
     }
+
+    abstract fun findID(alarm: Alarm): Long
 }

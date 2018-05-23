@@ -80,7 +80,7 @@ class StoredAlarmRepository(context: Context): AlarmRepository() {
                 "WHERE $COLUMN_ID = ?", arrayOf(id.toString()))
     }
 
-    private fun findID(alarm: Alarm): Long {
+    override fun findID(alarm: Alarm): Long {
         for(i in 0 until alarmList.size) {
             if(alarm==getAlarm(i)) {
                 return ids[i]

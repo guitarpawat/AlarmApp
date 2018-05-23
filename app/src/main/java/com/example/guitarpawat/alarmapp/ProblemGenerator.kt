@@ -1,5 +1,6 @@
 package com.example.guitarpawat.alarmapp
 
+import android.util.Log
 import java.util.*
 
 object ProblemGenerator {
@@ -13,6 +14,7 @@ object ProblemGenerator {
         val ans: Int
         val str: String
         val op: String
+        val res: Int
         when(operator) {
             0 -> {
                 ans = a+b
@@ -27,18 +29,21 @@ object ProblemGenerator {
                 op = "*"
             }
         }
-        str = when(x) {
+        when(x) {
             0 -> {
-                "x $op $b = $ans"
+                str = "x $op $b = $ans"
+                res = a
             }
             1 -> {
-                "$a $op x = $ans"
+                str = "$a $op x = $ans"
+                res = b
             }
             else -> {
-                "$a $op $b = x"
+                str = "$a $op $b = x"
+                res = ans
             }
         }
-        return Problem(str, ans)
+        return Problem(str, res)
     }
 
     class Problem(private val problem: String,private val answer: Int) {
@@ -46,6 +51,7 @@ object ProblemGenerator {
             return ans==answer
         }
         fun getProblem(): String {
+            Log.println(Log.ASSERT,"ans",answer.toString())
             return problem
         }
     }

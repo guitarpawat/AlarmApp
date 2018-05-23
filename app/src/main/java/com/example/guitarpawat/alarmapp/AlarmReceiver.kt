@@ -10,8 +10,8 @@ import java.util.*
 class AlarmReceiver: BroadcastReceiver() {
 
     override fun onReceive(context: Context, intent: Intent) {
-        Log.println(Log.ASSERT,"alarm","ringgggg!")
-        Toast.makeText(context,"RING!!!",Toast.LENGTH_LONG).show()
+//        Log.println(Log.ASSERT,"alarm","ringgggg!")
+//        Toast.makeText(context,"RING!!!",Toast.LENGTH_LONG).show()
         var shouldAlarm = false
         val calendar = Calendar.getInstance()
         calendar.timeInMillis = System.currentTimeMillis()

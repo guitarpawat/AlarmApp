@@ -10,8 +10,8 @@ import kotlinx.android.synthetic.main.activity_alarm_alert.*
 class AlarmAlertActivity : AppCompatActivity() {
 
     lateinit var alarm: Alarm
-    private val problem1 = ProblemGenerator.generateProblem()
-    private val problem2 = ProblemGenerator.generateProblem()
+    private val problem1 = Problem.generateProblem()
+    private val problem2 = Problem.generateProblem()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

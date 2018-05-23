@@ -94,7 +94,7 @@ class MainActivity : AppCompatActivity(), AlarmView {
     }
 
     private fun addToManager(alarm: Alarm) {
-        Log.println(Log.ASSERT,"id-add",alarmRepository.findID(alarm).toString())
+        //Log.println(Log.ASSERT,"id-add",alarmRepository.findID(alarm).toString())
         var calendar = Calendar.getInstance()
         calendar.set(Calendar.HOUR_OF_DAY, alarm.hour)
         calendar.set(Calendar.MINUTE, alarm.minute)
@@ -110,7 +110,7 @@ class MainActivity : AppCompatActivity(), AlarmView {
         intent.putExtra("alarm",alarm.toBundle())
         val pendingIntent = PendingIntent.getBroadcast(this,alarmRepository.findID(alarm)
                 .toInt(),intent,PendingIntent.FLAG_UPDATE_CURRENT)
-        Log.println(Log.ASSERT,"id-del",alarmRepository.findID(alarm).toString())
+        //Log.println(Log.ASSERT,"id-del",alarmRepository.findID(alarm).toString())
         pendingIntent.cancel()
         alarmManager.cancel(pendingIntent)
     }

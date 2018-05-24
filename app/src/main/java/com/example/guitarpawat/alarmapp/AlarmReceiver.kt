@@ -58,8 +58,7 @@ class AlarmReceiver: BroadcastReceiver() {
 
         val hour = calendar.get(Calendar.HOUR_OF_DAY)
         val minute = calendar.get(Calendar.MINUTE)
-
-        // FOR TESTING: If alarm_time < current_time not more than 2 minutes will ring.
+        
         if(hour != alarm.hour || minute != alarm.minute) {
             shouldAlarm = false
         }
